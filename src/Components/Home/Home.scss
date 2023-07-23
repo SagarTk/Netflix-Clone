@@ -1,0 +1,39 @@
+$bg : rgb(3, 3, 3);
+
+.banner{
+    background-color: $bg;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    
+    >img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.row{
+    background-color: $bg;
+    padding: 1rem;
+
+    >h2{
+        margin: 0.3rem;
+        font-weight: 400;
+    }
+    
+    >div{
+        display: flex;
+        overflow-x: auto;
+    }
+}
+
+.card{
+    width: 150px;
+    height: 180px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 0.3rem;
+    &:hover{
+        transform: scaleY(1.1);
+    }
+}
